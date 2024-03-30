@@ -9,6 +9,8 @@ html {
 }
 
 .page {
+  display: flex;
+  align-items: center;
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -79,6 +81,7 @@ ol {
 }
 
 .content {
+  margin: 0 auto;
   width: 1250px;
   display: flex;
   align-items: end;
