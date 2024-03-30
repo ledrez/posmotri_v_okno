@@ -59,7 +59,7 @@ ol {
   padding: 6px 0;
   color: #fff;
   background: none;
-  border: 1px solid #fff;
+  border: 1px solid currentColor;
   cursor: pointer;
 }
 
@@ -81,6 +81,7 @@ ol {
 }
 
 .content {
+  padding-left: 30px;
   margin: 0 auto;
   width: 1250px;
   display: flex;
@@ -212,8 +213,6 @@ ol {
   position: relative;
   height: 300px;
   overflow: auto;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
 }
 
 .content__list-item:not(:last-child) {
@@ -221,6 +220,7 @@ ol {
 }
 
 .content__card-link {
+  margin: 2px;
   text-decoration: none;
   display: block;
 }
@@ -242,6 +242,10 @@ ol {
   border-bottom: 1px solid #fff;
 }
 
+.content__card-link_current {
+  background: #545050;
+}
+
 .content__video-card {
   display: flex;
   justify-content: space-between;
@@ -256,6 +260,10 @@ ol {
   text-transform: uppercase;
   color: #fff;
   margin-bottom: 6px;
+  max-width: 200px;
+  text-overflow: ellipsis; 
+  white-space: nowrap; 
+  overflow: hidden;
 }
 
 .content__video-card-description {
@@ -263,12 +271,17 @@ ol {
   font-size: 18px;
   line-height: 90%;
   color: #fff;
+  max-width: 200px;
+  text-overflow: ellipsis; 
+  white-space: nowrap; 
+  overflow: hidden;
 }
 
 .content__video-card-thumbnail {
   width: 194px;
   height: 103px;
   object-fit: cover;
+  object-position: center;
 }
 
 .more-button {
